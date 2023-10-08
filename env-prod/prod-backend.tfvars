@@ -1,3 +1,4 @@
 bucket  = "b55-terraform-bucket"
 key     = "vpc/prod/terraform.tfstate"
-region  = "us-east-1" 
+region  = "us-east-1"
+encrypt = true 

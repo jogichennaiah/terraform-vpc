@@ -8,8 +8,10 @@ pipeline {
     stages {
         stage('Terraform Init'){
             steps {
+                sh "terraform init -migrate-state"
+                sh "terraform init -reconfigure"
                 sh "terrafile -f env-${ENV}/Terrafile"
-                sh "terraform init -backend-reconfig=env-${ENV}/${ENV}-backend.tfvars"
+                sh "terraform init -backend-config=env-${ENV}/${ENV}-backend.tfvars"
             }
         }
         stage('Terraform Plan'){

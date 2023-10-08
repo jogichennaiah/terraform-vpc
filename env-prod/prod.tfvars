@@ -1,2 +1,2 @@
-VPC_CIDR    =  "10.1.1.0/24"
+VPC_CIDR    =  "10.0.2.0/24"
 ENV         =  "prod"

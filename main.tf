@@ -1,4 +1,4 @@
-module "docdb" {
-    source               = "./vendor/modules/docdb"
+module "vpc" {
+    source               = "./vendor/modules/vpc"
     ENV                  = var.ENV
 }

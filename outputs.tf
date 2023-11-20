@@ -38,19 +38,13 @@ output "PRIVATE_HOSTED_ZONE_NAME" {
     value = var.PRIVATE_HOSTED_ZONE_NAME
 }
 
-output "Public_HOSTED_ZONE_ID"{
+output "PUBLIC_HOSTED_ZONE_ID"{
     value = var.PUBLIC_HOSTED_ZONE_ID
 }
 
-output "PUBLUC_HOSTED_ZONE_NAME" {
+output "PUBLIC_HOSTED_ZONE_NAME" {
     value = var.PUBLIC_HOSTED_ZONE_NAME
 }
 
-output "PRIVATE_HOSTED_ZONE_ID" {
-  value = aws_route53_zone.private.id
-}
 
-output "PUBLIC_HOSTED_ZONE_ID" {
-  value = aws_route53_zone.public.id
-}
 
